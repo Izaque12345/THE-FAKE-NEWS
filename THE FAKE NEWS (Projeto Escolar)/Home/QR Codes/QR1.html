@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="QR1.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>THE FAKE NEWS | QR CODE 1</title>
+</head>
+
+<body>
+<div class="caixa">
+  <img src="frame.png">
+  <i style="color: dimgrey;">Scaneie o Código para saber mais</i>
+</div>
+<div class="con_grupo" id="button-home" onclick="BackPage()">
+<p>
+PÁGINA ANT.
+</p>
+</div>
+<script>
+function BackPage() {
+window.history.back();
+}
+
+window.addEventListener('scroll', function() {
+var button = document.getElementById('button-home');
+var scrollPosition = window.scrollY + window.innerHeight;
+var documentHeight = document.body.scrollHeight;
+
+if (scrollPosition >= documentHeight) {
+button.style.opacity = '0.5'; // 50% transparente
+} else {
+button.style.opacity = '1'; // Opacidade normal
+}
+});
+</script>
+</body>
+
+</html>

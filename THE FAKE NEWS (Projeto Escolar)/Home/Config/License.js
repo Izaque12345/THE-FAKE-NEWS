@@ -1,0 +1,1 @@
+window.alert("Os usuários têm permissão para modificar o site e seus elementos, mas não podem publicar ou compartilhar essas modificações sem autorização prévia do Grupo STEAM's JCFB 9B.");
