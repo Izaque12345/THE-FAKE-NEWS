@@ -23,6 +23,8 @@ body {
   align-items: center;
   border-radius: 3px;
   background: #151320;
+  text-align: center; /* Alinha o texto dentro da .caixa no centro */
+  padding: 20px; /* Adiciona um espaçamento interno para o texto */
 }
 
 .caixa::before, .caixa::after {
@@ -79,7 +81,10 @@ a {
     width: 285pt;
   }
   
-  h1, h2, h3, p, legend {
-  text-align: center;
-  margin: 0; /* Para remover margens padrão que podem afetar o alinhamento */
+p{
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin-bottom: 20px;
 }

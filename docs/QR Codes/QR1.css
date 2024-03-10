@@ -57,7 +57,9 @@ img {
 
 i {
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
+  left: 7px;
+  text-align: center;
 }
 
  .con_grupo {

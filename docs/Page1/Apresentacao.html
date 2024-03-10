@@ -2,6 +2,9 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+  <link rel="icon" href="Incon/OIG2.png" type="image/x-icon">
+  <link rel="shortcut icon" href="Incon/OIG2.png" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="Incon/OIG2.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="Apresentacao.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css" integrity="sha512-ajhUYg8JAATDFejqbeN7KbF2zyPbbqz04dgOLyGcYEk/MJD3V+HJhJLKvJ2VVlqrr4PwHeGTTWxbI+8teA7snw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -146,9 +149,9 @@ PÁGINA ANT.
 
 <center>
 <h1>SE VC GOSTOU DA NOSSA REPORTAGEM...</h1>
-<a href="">
-<i>SAIBA SOBRE NOSSO GRUPO</i>
-</a>
+<!--<a href="">-->
+<i onclick="avisoIncompleto()" style="color: #ffa903;" style="text-decoration: underline;">SAIBA SOBRE NOSSO GRUPO</i>
+<!--</a>-->
 </center>
 
 <footer>
@@ -156,6 +159,11 @@ PÁGINA ANT.
 <i>&copy;2024 Grupo STEAMS 9B JCFB</i>
 </p>
 </footer>
+<script>
+  function avisoIncompleto() {
+    alert('[ERRO] Esta página é inacessível ou está incompleta');
+  }
+</script>
 <script>
 function BackPage() {
 window.history.back();

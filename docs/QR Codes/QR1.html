@@ -2,6 +2,10 @@
 <html>
 
 <head>
+  <meta name="theme-color" content="#151320">
+  <link rel="icon" href="Incon/OIG2.png" type="image/x-icon">
+  <link rel="shortcut icon" href="Incon/OIG2.png" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="Incon/OIG2.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="QR1.css">
   <meta charset="UTF-8">
@@ -11,14 +15,19 @@
 
 <body>
 <div class="caixa">
-  <img src="frame.png">
-  <i style="color: dimgrey;">Scaneie o Código para saber mais</i>
+  <img src="frame.png" onclick="qrlink()">
+  <i style="color: dimgrey;">Scaneie o Código ou Clique para saber mais</i>
 </div>
 <div class="con_grupo" id="button-home" onclick="BackPage()">
 <p>
 PÁGINA ANT.
 </p>
 </div>
+<script>
+  function qrlink() {
+    window.location.href = "https://www.jusbrasil.com.br/artigos/fake-news-e-o-impacto-na-promocao-dos-direitos-humanos/1328244468"
+  }
+</script>
 <script>
 function BackPage() {
 window.history.back();
