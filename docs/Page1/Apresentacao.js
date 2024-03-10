@@ -6,9 +6,11 @@ function toggleCSS() {
   if (screenWidth <= 768) {
     cssLink.href = 'Apresentacao(CELL).css';
     tituloT.style.textAlign = "left"
+    console.log("Mobile");
   } else {
     cssLink.href = 'Apresentacao(PC).css';
     tituloT.style.textAlign = "left"
+    console.log("Desktop");
   }
 }
 
