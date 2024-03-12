@@ -9,8 +9,10 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #151320;
-  
+  background-image: linear-gradient(to bottom, transparent, #151320), url('Img/OIG1.png');
+  background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetir a imagem */
 }
 
 .caixa {

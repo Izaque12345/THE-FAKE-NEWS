@@ -77,12 +77,12 @@
     position: fixed;
     bottom: 15pt;
     right: 15pt;
-    background: #151320;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 5px;
+    background: #151320;
   }
 
 
@@ -96,7 +96,6 @@
     font-family: font1;
     text-shadow: 2px 2px 2px #00000060;
   }
-}
 
 a {
   color: #ffa903;
@@ -104,4 +103,5 @@ a {
 
 audio {
   border-radius: 20px;
+}
 }
