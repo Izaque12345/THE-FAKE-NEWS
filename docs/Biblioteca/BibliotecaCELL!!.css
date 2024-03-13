@@ -1,0 +1,46 @@
+@media only screen and (max-width: 600px) { 
+body {
+  background: #151320;
+  margin: 15px;
+  color: white;
+}
+
+div {
+  margin: auto;
+}
+
+.box {
+  height: 200px;
+  width: 150px;
+  border-radius: 30px;
+  overflow: auto;
+  background: #151320;
+}
+
+p, img {
+  margin: auto;
+}
+
+#MSG-rolarParaBaixo {
+  position: relative;
+  top: 5px;
+  padding: 2px;
+  color: black;
+  background: white;
+}
+  .con_grupo {
+    height: 50pt;
+    width: 50pt;
+    border-radius: 100px;
+    box-shadow: 3px 3px 5px #00000043;
+    position: fixed;
+    bottom: 15pt;
+    right: 15pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    background: #151320;
+  }
+}

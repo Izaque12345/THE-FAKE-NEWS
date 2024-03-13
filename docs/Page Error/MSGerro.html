@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ERROR</title>
+</head>
+<style>
+* {
+  margin: 0;
+}
+  body {
+    background: #0E0B20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+  @font-face {
+    font-family: normal1;
+    src: url(/Font/normal.otf);
+  }
+  @font-face {
+    font-family: font1;
+    src: url(/Font/Inlanders.otf);
+  }
+  h1, h2, h3 {
+    color: white;
+    font-family: font1;
+    text-shadow: 2px 2px 2px #00000060;
+    font-size: 18pt;
+    text-transform: uppercase;
+  }
+  p, legend {
+    font-family: normal1;
+    width: 285pt;
+    color: white;
+  }
+</style>
+<body>
+  <div>
+    <h1 style="font-size: 55pt;">404</h1>
+    <h3>ops... Ocorreu um Erro</h3>
+    <p>Recomendamos <strong onclick="voltarAoHome()">Voltar para o Home</strong></p>
+  </div>
+  <script>
+    function voltarAoHome() {
+      window.location.href = "/docs/index.html"
+    }
+  </script>
+</body>
+
+</html>
