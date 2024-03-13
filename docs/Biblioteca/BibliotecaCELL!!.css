@@ -44,3 +44,8 @@ p, img {
     background: #151320;
   }
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}

@@ -18,13 +18,6 @@ function toggleCSS() {
 window.addEventListener('load', toggleCSS);
 window.addEventListener('resize', toggleCSS);
 
-// Redirecionar para as páginas
-var links = ['/docs/Biblioteca/Fake News/NoticiasFalsas.html']
-  
-  function Redirect() {
-    window.location.href = `${links[0]}`
-  }
-
 // Back Page
 function BackPage() {
 window.history.back();
