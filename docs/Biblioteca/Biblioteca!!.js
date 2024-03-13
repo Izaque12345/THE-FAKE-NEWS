@@ -20,10 +20,11 @@ window.addEventListener('resize', toggleCSS);
 
 // Redirecionar para as páginas
 var links = [
-  'Fake News/NoticiasFalsas.html']
+  'Fake News/NoticiasFalsas.html',
+'/docs/Page Error/MSGerro.html']
   
   function Redirect() {
-    window.location.href = "/docs/Page Error/MSGerro.html"
+    window.location.href = `${links[1]}`
   }
 
 // Back Page
