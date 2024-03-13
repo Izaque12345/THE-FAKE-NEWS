@@ -19,7 +19,7 @@ window.addEventListener('load', toggleCSS);
 window.addEventListener('resize', toggleCSS);
 
 // Redirecionar para as páginas
-var links = ['Fake News/NoticiasFalsas.html']
+var links = ['/docs/Biblioteca/Fake News/NoticiasFalsas.html']
   
   function Redirect() {
     window.location.href = `${links[0]}`
