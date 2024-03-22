@@ -5,7 +5,7 @@
     background: linear-gradient(to bottom, #151320, #a20b00, #640c06);
     text-align: left;
     cursor: default;
-    font-size: 16px;
+    font-size: 14px;
     align-items: center;
     color: white;
   }
@@ -38,7 +38,7 @@
   }
   p, legend {
     font-family: normal1;
-    width: 285pt;
+    width: 255pt;
   }
   strong {
     color: #ffec35;
@@ -46,7 +46,7 @@
   }
   img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 4px;
   }
   iframe {
     border-radius: 20px;

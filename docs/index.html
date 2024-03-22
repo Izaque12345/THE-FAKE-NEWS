@@ -12,6 +12,13 @@
 </head>
 
 <body>
+  <section>
+    <div id="div1" onmouseover="mudarCorDaOption()"><p></p></div>
+    <div id="div2"><p></p></div>
+    <div id="div3"><p></p></div>
+    <div id="div4"><p></p></div>
+  </section>
+  
 <div class="caixa">
   <div style="">
 <h1>THE FAKE NEWS</h1>
@@ -33,6 +40,7 @@
 </a>
 <br>
 <i onclick="updateDetails()">v1.9.4</i> &nbsp; <i style="color: yellow;">BETA</i>
+<!--<i style="color: red;">OFICIAL</i>-->
 </div>
 </div>
 <script>
@@ -43,9 +51,126 @@
     alert('[ERROR] Esta página está em produção, é possível que a encontre incompleta');
   }
   function updateDetails() {
-    alert('DETALHES DA ATUALIZAÇÃO: Correção de erros na página Apresentacao.html, Mudança do nome do segundo link da página Index.html, Biblioteca Adicionada, Página de ERROR Adicionada, Detalhes de atualização adicionada na versão da página, Correção de erros de redirecionamento');
+    alert('DETALHES DA ATUALIZAÇÃO: foi implementado um hub de páginas recomendadas ao Index.html, o tamanho do texto para versões mobile da página Apresentacao foi diminuído, As bordas mas imagens foram diminuídas na página Apresentacao');
   }
 </script>
-<script src=""></script>
+<script>
+const div1 = window.document.getElementById('div1');
+const div2 = window.document.getElementById('div2');
+const div3 = window.document.getElementById('div3');
+const div4 = window.document.getElementById('div4');
+var linksBiblioteca = [
+  'Fake News', 
+  'Apresentação', 
+  'Código QR', 
+  'Biblioteca']
+var numeros = [0, 1, 2, 3]; 
+var numero1 = Math.floor(Math.random()*numeros.length);
+numSorteado1 = numeros[numero1];
+numeros.splice(numero1, 1);
+
+var numero2 = Math.floor(Math.random()*numeros.length);
+numSorteado2 = numeros[numero2];
+numeros.splice(numero2, 1);
+
+var numero3 = Math.floor(Math.random()*numeros.length);
+numSorteado3 = numeros[numero3];
+numeros.splice(numero3, 1);
+
+var numero4 = Math.floor(Math.random()*numeros.length);
+numSorteado4 = numeros[numero4];
+
+div1.innerHTML = linksBiblioteca[numSorteado1];
+div2.innerHTML = linksBiblioteca[numSorteado2];
+div3.innerHTML = linksBiblioteca[numSorteado3];
+div4.innerHTML = linksBiblioteca[numSorteado4];
+
+div1.onclick = function() {
+  switch (div1.innerHTML) {
+    case 'Fake News':
+      window.location.href = '/docs/Biblioteca/Fake News/NoticiasFalsas.html';
+      break;
+    case 'Apresentação':
+      window.location.href = '/docs/Page1/Apresentacao.html';
+      break;
+    case 'Código QR':
+      window.location.href = '/docs/QR Codes/QR1.html';
+      break;
+    case 'Biblioteca':
+      window.location.href = '/docs/Biblioteca/Biblioteca!!.html';
+      break;
+    default:
+    alert('Esta página não existe...')
+      break;
+  }
+};
+
+div2.onclick = function() {
+  switch (div2.innerHTML) {
+    case 'Fake News':
+      window.location.href = '/docs/Biblioteca/Fake News/NoticiasFalsas.html';
+      break;
+    case 'Apresentação':
+      window.location.href = '/docs/Page1/Apresentacao.html';
+      break;
+    case 'Código QR':
+      window.location.href = '/docs/QR Codes/QR1.html';
+      break;
+    case 'Biblioteca':
+      window.location.href = '/docs/Biblioteca/Biblioteca!!.html';
+      break;
+    default:
+    alert('Esta página não existe...')
+      break;
+  }
+};
+
+div3.onclick = function() {
+  switch (div3.innerHTML) {
+    case 'Fake News':
+      window.location.href = '/docs/Biblioteca/Fake News/NoticiasFalsas.html';
+      break;
+      case 'Apresentação':
+      window.location.href = '/docs/Page1/Apresentacao.html';
+      break;
+      case 'Código QR':
+      window.location.href = '/docs/QR Codes/QR1.html';
+      break;
+      case 'Biblioteca':
+      window.location.href = '/docs/Biblioteca/Biblioteca!!.html';
+      break;
+      default:
+      alert('Esta página não existe...')
+      break;
+  }
+};
+
+div4.onclick = function() {
+  switch (div4.innerHTML) {
+    case 'Fake News':
+      window.location.href = '/docs/Biblioteca/Fake News/NoticiasFalsas.html';
+      break;
+      case 'Apresentação':
+      window.location.href = '/docs/Page1/Apresentacao.html';
+      break;
+      case 'Código QR':
+      window.location.href = '/docs/QR Codes/QR1.html';
+      break;
+      case 'Biblioteca':
+      window.location.href = '/docs/Biblioteca/Biblioteca!!.html';
+      break;
+      default:
+      alert('Esta página não existe...')
+      break;
+  }
+};
+
+function mudarCorDaOption() {
+  document.getElementById('div1').style.background = "red"
+  document.getElementById('div2').style.background = "red"
+  document.getElementById('div3').style.background = "red"
+  document.getElementById('div4').style.background = "red"
+}
+</script>
 </body>
 </html>

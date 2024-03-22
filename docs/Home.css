@@ -15,6 +15,45 @@ body {
   background-repeat: no-repeat; /* Evita repetir a imagem */
 }
 
+section {
+  border-top: 5px solid #151320;
+  display: inline-flex;
+  padding:  auto;
+  padding-top: 5px;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#div1, #div2, #div3, #div4 {
+  margin: auto;
+  border-radius: 100px;
+  height: 24px;
+  width: 95px;
+  color: ghostwhite;
+  font-size: 10pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#div1, #div2, #div3, #div4 {
+  animation: 2s divColor infinite;
+} @keyframes divColor {
+  0% {
+    background: #151320;
+  }
+  
+  50% {
+    background: #321919;
+  }
+  
+  100% {
+      background: #151320;
+    }
+}
+
 .caixa {
   position: relative;
   width: 350px;
