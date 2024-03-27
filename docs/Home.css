@@ -13,10 +13,10 @@ body {
   background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Evita repetir a imagem */
+  font-size: 12pt;
 }
 
 section {
-  border-top: 5px solid #151320;
   display: inline-flex;
   padding:  auto;
   padding-top: 5px;
@@ -29,8 +29,8 @@ section {
 #div1, #div2, #div3, #div4 {
   margin: auto;
   border-radius: 100px;
-  height: 24px;
-  width: 95px;
+  height: auto;
+  width: 24%;
   color: ghostwhite;
   font-size: 10pt;
   display: flex;
@@ -71,8 +71,8 @@ section {
 .caixa::before, .caixa::after {
   content: '';
   position: absolute;
-  width: calc(100% + 30px);
-  height: calc(100% + 30px);
+  width: calc(100% + 27px);
+  height: calc(100% + 27px);
   z-index: -1;
   background: linear-gradient(45deg, #ff1919, #cb0000, #630000, #932200, #df3400, #ff4b14, #e10d00);
   background-size: 300%;
@@ -128,4 +128,20 @@ p{
 
 h1 {
   margin-bottom: 20px;
+}
+
+#Pop-Up {
+  color: whitesmoke;
+  position: absolute;
+  padding: 25px 25px 25px 25px;
+  z-index: 2;
+}
+
+#protection {
+  background: #000000AD;
+  filter: blur(50px);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
 }

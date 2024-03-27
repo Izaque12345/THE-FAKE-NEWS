@@ -12,9 +12,11 @@ div {
 .box {
   height: 200px;
   width: 150px;
-  border-radius: 30px;
-  overflow: auto;
+  border-radius: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
   background: #151320;
+  margin: 20px;
 }
 
 p, img {
@@ -43,9 +45,28 @@ p, img {
     padding: 5px;
     background: #151320;
   }
-}
-
-a {
+  a {
   text-decoration: none;
   color: white;
+}
+section {
+  display: inline-flex;
+  background: transparent;
+  overflow: auto;
+  width: 100%;
+}
+img {
+  height: 130px;
+  width: 160px;
+}
+.h21045jl2 {
+  height: 200px;
+  width: 150px;
+  border-radius: 20px;
+  background: red;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 }

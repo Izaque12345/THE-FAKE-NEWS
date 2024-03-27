@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="/Config.Pages/forIndex.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/Config.Pages/forPageHub.js" type="text/javascript" charset="utf-8"></script>
   <link rel="icon" href="Incon/OIG2.png" type="image/x-icon">
   <link rel="shortcut icon" href="Incon/OIG2.png" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="180x180" href="Incon/OIG2.png">
@@ -12,15 +14,16 @@
 </head>
 
 <body>
+  <div id="protection"></div>
   <section>
-    <div id="div1" onmouseover="mudarCorDaOption()"><p></p></div>
+    <div id="div1"><p></p></div>
     <div id="div2"><p></p></div>
     <div id="div3"><p></p></div>
     <div id="div4"><p></p></div>
   </section>
   
 <div class="caixa">
-  <div style="">
+<div>
 <h1>THE FAKE NEWS</h1>
 <a href="Page1/Apresentacao.html">
 <p>
@@ -39,22 +42,35 @@
 </p>
 </a>
 <br>
-<i onclick="updateDetails()">v1.9.4</i> &nbsp; <i style="color: yellow;">BETA</i>
+<i onclick="updateDetails()">v1.9.5</i> &nbsp; <i style="color: yellow;">BETA</i>
 <!--<i style="color: red;">OFICIAL</i>-->
 </div>
 </div>
+
+<div id="Pop-Up" onclick="updateDetails()">
+  <h2>Considerações da Atualização</h2>
+  <span>
+  <br>
+  ATUALIZAÇÃO 1.9.5: 
+  <br><br>
+• O border-top foi Removido do Home
+<br>
+• O estilo das opções do hub de páginas
+recomendadas no Home foram corrigidas
+<br>
+• O tamanho das imagens da versão Desktop da página Apresentacao.html foram foram ajustadas para 50%
+<br>
+• O estilos para Celulares da Biblioteca foram corrigidos
+<br>
+• A página Memes.html foi criada
+<br>
+• O tamanho da fonte do index.html e Apresentacao.html foi diminuído
+<br>
+• Os códigos Javascript foram separados em uma pasta
+</span>
+</div>
 <script>
-  function avisoIncompleto() {
-    alert('[ERROR] Esta página é inacessível ou está incompleta');
-  }
-  function avisoEmProducao() {
-    alert('[ERROR] Esta página está em produção, é possível que a encontre incompleta');
-  }
-  function updateDetails() {
-    alert('DETALHES DA ATUALIZAÇÃO: foi implementado um hub de páginas recomendadas ao Index.html, o tamanho do texto para versões mobile da página Apresentacao foi diminuído, As bordas mas imagens foram diminuídas na página Apresentacao');
-  }
-</script>
-<script>
+  console.log('Config.Home/forPageHub')
 const div1 = window.document.getElementById('div1');
 const div2 = window.document.getElementById('div2');
 const div3 = window.document.getElementById('div3');
@@ -165,12 +181,25 @@ div4.onclick = function() {
   }
 };
 
-function mudarCorDaOption() {
-  document.getElementById('div1').style.background = "red"
-  document.getElementById('div2').style.background = "red"
-  document.getElementById('div3').style.background = "red"
-  document.getElementById('div4').style.background = "red"
-}
+var secaoDaVersao = 0
+
+var protection = document.getElementById('protection');
+var popUp = document.getElementById('Pop-Up');
+
+  popUp.style.display = "none";
+  protection.style.display = "none";
+  
+  function updateDetails() {
+    if (secaoDaVersao == 0) {
+    popUp.style.display = "block";
+    protection.style.display = "block";
+    secaoDaVersao = 1
+    } else {
+      popUp.style.display = "none";
+     protection.style.display = "none";
+      secaoDaVersao = 0
+    }
+  }
 </script>
 </body>
 </html>

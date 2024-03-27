@@ -4,11 +4,11 @@ function toggleCSS() {
   var tituloT = document.getElementById("tituloT");
 
   if (screenWidth <= 768) {
-    cssLink.href = 'BibliotecaCELL!!.css';
+    cssLink.href = '/docs/Biblioteca/BibliotecaCELL!!.css';
     tituloT.style.textAlign = "left"
     console.log("Mobile");
   } else {
-    cssLink.href = 'BibliotecaPC!!.css';
+    cssLink.href = '/docs/Biblioteca/BibliotecaPC!!.css';
     tituloT.style.textAlign = "left"
     console.log("Desktop");
   }

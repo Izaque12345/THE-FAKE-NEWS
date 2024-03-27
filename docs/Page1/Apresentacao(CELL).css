@@ -11,7 +11,7 @@
   }
   p {
     animation: intro 2s;
-    font-size: 12pt;
+    font-size: 11pt;
   }
   @keyframes intro {
     from {
@@ -33,12 +33,11 @@
     color: white;
     font-family: font1;
     text-shadow: 2px 2px 2px #00000060;
-    font-size: 18pt;
+    font-size: 15pt;
     text-transform: uppercase;
   }
   p, legend {
     font-family: normal1;
-    width: 255pt;
   }
   strong {
     color: #ffec35;
@@ -49,12 +48,11 @@
     border-radius: 4px;
   }
   iframe {
-    border-radius: 20px;
     box-shadow: 2px 2px 3px #0000006d;
     margin-top: 5pt;
     margin-bottom: 5pt;
     width: 100%;
-    height: 300pt;
+    height: 200px;
   }
   .menssagem {
     border-radius: 50px;
