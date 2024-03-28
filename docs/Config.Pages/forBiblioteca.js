@@ -1,3 +1,4 @@
+console.log('forBiblioteca');
 function toggleCSS() {
   var screenWidth = window.innerWidth;
   var cssLink = document.getElementById('css-link');

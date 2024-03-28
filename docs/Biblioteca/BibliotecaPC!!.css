@@ -1,0 +1,67 @@
+@media only screen and (min-width: 601px) {
+  body {
+    background: linear-gradient(to right, black, #151320, #251F44), url('Img/OIG1.png');
+    margin: 0;
+    color: white;
+    body {
+  font-family: Arial, sans-serif;
+}
+  }
+
+  div {
+    margin: auto;
+  }
+
+  .box {
+    height: 200px;
+    width: 150px;
+    border-radius: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #151320;
+    margin: 20px;
+  }
+
+  p, img {
+    margin: auto;
+  }
+
+  #MSG-rolarParaBaixo {
+    position: relative;
+    top: 5px;
+    padding: 2px;
+    color: black;
+    background: white;
+  }
+
+  .con_grupo {
+    height: 50pt;
+    width: 50pt;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #00000043;
+    position: fixed;
+    bottom: 15pt;
+    right: 15pt;
+    color: white;
+    background: #151320;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  section {
+    display: flex;
+    background: transparent;
+    overflow: auto;
+    width: 100%;
+  }
+a {
+  text-decoration: none;
+  color: white;
+}
+  /*.h21045jl2 {
+    display: none; /* Esconder o elemento no PC
+  }*/
+}

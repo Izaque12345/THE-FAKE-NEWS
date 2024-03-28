@@ -3,6 +3,10 @@ body {
   background: #151320;
   margin: 15px;
   color: white;
+  background: linear-gradient(to rig, black, #151320, #251F44), url('Img/OIG1.png');
+  body {
+    font-family: Arial, sans-serif;
+  }
 }
 
 div {
@@ -59,7 +63,7 @@ img {
   height: 130px;
   width: 160px;
 }
-.h21045jl2 {
+/*.h21045jl2 {
   height: 200px;
   width: 150px;
   border-radius: 20px;
@@ -67,6 +71,6 @@ img {
   margin: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
 }
 }
