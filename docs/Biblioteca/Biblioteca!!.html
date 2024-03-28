@@ -3,7 +3,7 @@
 
 <head>
   <script src="/docs/Config.Pages/forBiblioteca.js" type="text/javascript" charset="utf-8"></script>
-  <link id="css-link" rel="stylesheet" href="">
+  <link id="cssLink" rel="stylesheet" href="">
   <meta charset="UTF-8">
   <meta name="theme-color" content="#151320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,7 @@
   <h3 style="color: yellow;">Páginas:</h3>
 <section>
   <!-- Caixa 1 -->
-  <a href="/docs/Biblioteca/Fake News/NoticiasFalsas.html">
+  <a href="Biblioteca/Fake News/NoticiasFalsas.html">
   <div class="box" onclick="Redirect()">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAWSOgEhMLUK2nk0wWkB4nwkOoZi_pYEsWiT506IUH1Tb0pO6UAq5zV5zm&s=10" alt="">
       <center>
@@ -29,7 +29,7 @@
 </a>
 
 <!-- Caixa 2 -->
-<a href="/docs/Biblioteca/Memes/Memes.html">
+<a href="Biblioteca/Memes/Memes.html">
   <div class="box">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShMxhpjglXKb8PCXefk9H9DOKh5a236kSMOw&usqp=CAU" alt="">
       <center>
@@ -57,15 +57,15 @@ PÁGINA ANT.
   console.log('forBiblioteca');
 function toggleCSS() {
   var screenWidth = window.innerWidth;
-  var cssLink = document.getElementById('css-link');
+  var cssLink = document.getElementById('cssLink');
   var tituloT = document.getElementById("tituloT");
 
   if (screenWidth <= 768) {
-    cssLink.href = '/docs/Biblioteca/BibliotecaCELL!!.css';
+    cssLink.href = 'Biblioteca/BibliotecaCELL!!.css';
     tituloT.style.textAlign = "left"
     console.log("Mobile");
   } else {
-    cssLink.href = '/docs/Biblioteca/BibliotecaPC!!.css';
+    cssLink.href = 'Biblioteca/BibliotecaPC!!.css';
     tituloT.style.textAlign = "left"
     console.log("Desktop");
   }
