@@ -3,10 +3,8 @@ body {
   background: #151320;
   margin: 15px;
   color: white;
-  background: linear-gradient(to rig, black, #151320, #251F44), url('Img/OIG1.png');
-  body {
+  background: linear-gradient(to right, black, #151320, #251F44);
     font-family: Arial, sans-serif;
-  }
 }
 
 div {
