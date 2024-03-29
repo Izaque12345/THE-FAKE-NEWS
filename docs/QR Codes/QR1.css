@@ -14,6 +14,7 @@ body {
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Evita repetir a imagem */
     font-family: Arial, sans-serif;
+    animation: intro 2s;
 }
 
 .caixa {
@@ -81,4 +82,12 @@ i {
     align-items: center;
     text-align: center;
     padding: 10px;
+  }
+   @keyframes intro {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
   }

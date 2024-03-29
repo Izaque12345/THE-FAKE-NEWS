@@ -2,6 +2,9 @@
 <html>
 
 <head>
+  <link rel="stylesheet" href="NF(CELL).css">
+  <meta name="theme-color" 
+  content="#151320">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>THE FAKE NEWS | NOTÍCIAS FALSAS</title>
@@ -11,8 +14,51 @@
   <center>
     <h1>Notícias Falsas</h1>
   </center>
+  <h2>Manchete:</h2>
+  <p>"Nova descoberta científica revela que comer chocolate todos os dias aumenta a inteligência"</p>
+  <h2>Breve Descrição:</h2>
+  <p>Uma pesquisa realizada pelos cientistas mais famosos afirma que o consumo diário de chocolate está diretamente relacionado ao aumento da inteligência.</p>
   
+  <h2>Manchete:</h2>
+  <p>Estudo surpreendente mostra que dormir menos de 4 horas por noite pode ajudar a perder peso</p>
+  <h2>Breve Descrição:</h2>
+  <p>Um estudo sugere que a privação extrema de sono pode acelerar o metabolismo e levar à perda de peso.</p>
   
-</body>
+  <h2>Manchete:</h2>
+  <p>"Pesquisa revela que o uso excessivo de celular pode fortalecer o sistema imunológico"</p>
+  <h2>Breve Descrição:</h2>
+  <p>Um estudo que inclui total base científica afirma que a exposição constante à radiação dos celulares pode fortalecer o sistema imunológico humano.</p>
+  
+  <h2>Manchete:</h2>
+  <p>"Novo método revolucionário promete curar ressacas instantaneamente"</p>
+  <h2>Breve Descrição:</h2>
+  <p>Uma técnica médica inventada por um dos melhores medicos do Brasil promete eliminar todos os sintomas de ressaca em questão de minutos.</p>
+  
+  <h2>Manchete:</h2>
+  <p>"Especialistas afirmam que beber refrigerante diet todos os dias pode aumentar a longevidade"</p>
+  <h2>Breve Descrição:</h2>
+  <p>Uma pesquisa afirma que a ingestão diária de refrigerante dietético está associada a uma vida mais longa e saudável.</p>
+  
+  <div class="con_grupo" id="button-home" onclick="BackPage()">
+  <p>PÁGINA ANT.</p>
+</div>
 
+<script>
+  function BackPage() {
+    window.history.back();
+  }
+
+  window.addEventListener('scroll', function() {
+    var button = document.getElementById('button-home');
+    var scrollPosition = window.scrollY + window.innerHeight;
+    var documentHeight = document.body.scrollHeight;
+
+    if (scrollPosition >= documentHeight) {
+      button.style.opacity = '0.5'; // 50% transparente
+    } else {
+      button.style.opacity = '1'; // Opacidade normal
+    }
+  });
+</script>
+</body>
 </html>
