@@ -6,6 +6,12 @@
     background: linear-gradient(to bottom, #151320, #a20b00, #640c06);
     color: white;
   }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
   p {
     animation: intro 2s;
     color: white;
@@ -18,14 +24,14 @@
       opacity: 100%;
     }
   }
-  @font-face {
+  /*@font-face {
     font-family: normal1;
     src: url(Font/normal.otf);
   }
   @font-face {
     font-family: font1;
     src: url(Font/inlanders.otf);
-  }
+  }*/
   h1, h2, h3 {
     color: white;
     font-family: font1;

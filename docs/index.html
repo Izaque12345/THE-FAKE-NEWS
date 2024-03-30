@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <script src="/Config.Pages/forIndex.js" type="text/javascript" charset="utf-8"></script>
   <script src="/Config.Pages/forPageHub.js" type="text/javascript" charset="utf-8"></script>
@@ -8,198 +9,207 @@
   <link rel="apple-touch-icon" sizes="180x180" href="Incon/OIG2.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>THE FAKE NEWS | HOME</title>
-<link rel="stylesheet" href="Home.css" type="text/css" media="all" />
-<meta name="theme-color" content="#151320">
+  <title>THE FAKE NEWS | HOME</title>
+  <link rel="stylesheet" href="Home.css" type="text/css" media="all" />
+  <meta name="theme-color" content="#151320">
 </head>
 
 <body>
   <div id="protection"></div>
   <section>
-    <div id="div1"><p></p></div>
-    <div id="div2"><p></p></div>
-    <div id="div3"><p></p></div>
-    <div id="div4"><p></p></div>
+    <div id="div1">
+      <p></p>
+    </div>
+    <div id="div2">
+      <p></p>
+    </div>
+    <div id="div3">
+      <p></p>
+    </div>
+    <div id="div4">
+      <p></p>
+    </div>
   </section>
-  
-<div class="caixa">
-<div>
-<h1>THE FAKE NEWS</h1>
-<a href="Page1/Apresentacao.html">
-<p>
-• IR PARA APRESENTAÇÃO
-</p>
-</a>
-<a href="Biblioteca/Biblioteca!!.html">
-<p>
-<p onclick="avisoEmProducao()">
-• IR PARA BIBLIOTECA 
-</p>
-</a>
-<a href="QR Codes/QR1.html">
-<p>
-• CÓDIGO QR <i style="color: #ff341d;">SAIBA MAIS...</i>
-</p>
-</a>
-<br>
-<i style="color: red;" onclick="updateDetails()">ESTÁGIO FINAL</i>
-<!--<i style="color: red;">OFICIAL</i>-->
-</div>
-</div>
 
-<div id="Pop-Up" onclick="updateDetails()">
-  <h2>Considerações da Atualização</h2>
-  <span>
-  <br>
-  ATUALIZAÇÃO 1.9.5: 
-  <br><br>
-• O border-top foi Removido do Home
-<br>
-• O estilo das opções do hub de páginas
-recomendadas no Home foram corrigidas
-<br>
-• O tamanho das imagens da versão Desktop da página Apresentacao.html foram foram ajustadas para 50%
-<br>
-• O estilos para Celulares da Biblioteca foram corrigidos
-<br>
-• A página Memes.html foi criada
-<br>
-• O tamanho da fonte do index.html e Apresentacao.html foi diminuído
-<br>
-• Os códigos Javascript foram separados em uma pasta
-</span>
-</div>
-<script>
-  console.log('Config.Home/forPageHub')
-const div1 = window.document.getElementById('div1');
-const div2 = window.document.getElementById('div2');
-const div3 = window.document.getElementById('div3');
-const div4 = window.document.getElementById('div4');
-var linksBiblioteca = [
-  'Fake News', 
-  'Apresentação', 
-  'Código QR', 
+  <div class="caixa">
+    <div>
+      <h1>THE FAKE NEWS</h1>
+      <a href="Page1/Apresentacao.html">
+        <p>
+          • IR PARA APRESENTAÇÃO
+        </p>
+      </a>
+      <a href="Biblioteca/Biblioteca!!.html">
+        <p>
+          <p onclick="avisoEmProducao()">
+            • IR PARA BIBLIOTECA
+          </p>
+      </a>
+      <a href="QR Codes/QR1.html">
+        <p>
+          • CÓDIGO QR <i style="color: #ff341d;">SAIBA MAIS...</i>
+        </p>
+      </a>
+      <br>
+      <i style="color: red;" onclick="updateDetails()">ESTÁGIO FINAL</i>
+      <!--<i style="color: red;">OFICIAL</i>-->
+    </div>
+  </div>
+
+  <div id="Pop-Up" onclick="updateDetails()">
+    <h2>Considerações da Atualização</h2>
+    <span>
+      <br>
+      ATUALIZAÇÃO 1.9.5:
+      <br><br>
+      • O border-top foi Removido do Home
+      <br>
+      • O estilo das opções do hub de páginas
+      recomendadas no Home foram corrigidas
+      <br>
+      • O tamanho das imagens da versão Desktop da página Apresentacao.html foram foram ajustadas para 50%
+      <br>
+      • O estilos para Celulares da Biblioteca foram corrigidos
+      <br>
+      • A página Memes.html foi criada
+      <br>
+      • O tamanho da fonte do index.html e Apresentacao.html foi diminuído
+      <br>
+      • Os códigos Javascript foram separados em uma pasta
+    </span>
+  </div>
+  <script>
+    console.log('Config.Home/forPageHub')
+    const div1 = window.document.getElementById('div1');
+    const div2 = window.document.getElementById('div2');
+    const div3 = window.document.getElementById('div3');
+    const div4 = window.document.getElementById('div4');
+    var linksBiblioteca = [
+  'Fake News',
+  'Apresentação',
+  'Código QR',
   'Biblioteca']
-var numeros = [0, 1, 2, 3]; 
-var numero1 = Math.floor(Math.random()*numeros.length);
-numSorteado1 = numeros[numero1];
-numeros.splice(numero1, 1);
+    var numeros = [0, 1, 2, 3];
+    var numero1 = Math.floor(Math.random() * numeros.length);
+    numSorteado1 = numeros[numero1];
+    numeros.splice(numero1, 1);
 
-var numero2 = Math.floor(Math.random()*numeros.length);
-numSorteado2 = numeros[numero2];
-numeros.splice(numero2, 1);
+    var numero2 = Math.floor(Math.random() * numeros.length);
+    numSorteado2 = numeros[numero2];
+    numeros.splice(numero2, 1);
 
-var numero3 = Math.floor(Math.random()*numeros.length);
-numSorteado3 = numeros[numero3];
-numeros.splice(numero3, 1);
+    var numero3 = Math.floor(Math.random() * numeros.length);
+    numSorteado3 = numeros[numero3];
+    numeros.splice(numero3, 1);
 
-var numero4 = Math.floor(Math.random()*numeros.length);
-numSorteado4 = numeros[numero4];
+    var numero4 = Math.floor(Math.random() * numeros.length);
+    numSorteado4 = numeros[numero4];
 
-div1.innerHTML = linksBiblioteca[numSorteado1];
-div2.innerHTML = linksBiblioteca[numSorteado2];
-div3.innerHTML = linksBiblioteca[numSorteado3];
-div4.innerHTML = linksBiblioteca[numSorteado4];
+    div1.innerHTML = linksBiblioteca[numSorteado1];
+    div2.innerHTML = linksBiblioteca[numSorteado2];
+    div3.innerHTML = linksBiblioteca[numSorteado3];
+    div4.innerHTML = linksBiblioteca[numSorteado4];
 
-div1.onclick = function() {
-  switch (div1.innerHTML) {
-    case 'Fake News':
-      window.location.href = 'Biblioteca/Fake News/NoticiasFalsas.html';
-      break;
-    case 'Apresentação':
-      window.location.href = 'Page1/Apresentacao.html';
-      break;
-    case 'Código QR':
-      window.location.href = 'QR Codes/QR1.html';
-      break;
-    case 'Biblioteca':
-      window.location.href = 'Biblioteca/Biblioteca!!.html';
-      break;
-    default:
-    alert('Esta página não existe...')
-      break;
-  }
-};
-
-div2.onclick = function() {
-  switch (div2.innerHTML) {
-    case 'Fake News':
-    window.location.href = 'Biblioteca/Fake News/NoticiasFalsas.html';
-    break;
-    case 'Apresentação':
-    window.location.href = 'Page1/Apresentacao.html';
-    break;
-    case 'Código QR':
-    window.location.href = 'QR Codes/QR1.html';
-    break;
-    case 'Biblioteca':
-    window.location.href = 'Biblioteca/Biblioteca!!.html';
-    break;
-    default:
-    alert('Esta página não existe...')
-    break;
-  }
-};
-
-div3.onclick = function() {
-  switch (div3.innerHTML) {
-    case 'Fake News':
-    window.location.href = 'Biblioteca/Fake News/NoticiasFalsas.html';
-    break;
-    case 'Apresentação':
-    window.location.href = 'Page1/Apresentacao.html';
-    break;
-    case 'Código QR':
-    window.location.href = 'QR Codes/QR1.html';
-    break;
-    case 'Biblioteca':
-    window.location.href = 'Biblioteca/Biblioteca!!.html';
-    break;
-    default:
-    alert('Esta página não existe...')
-    break;
-    }
+    div1.onclick = function() {
+      switch (div1.innerHTML) {
+        case 'Fake News':
+          window.location.href = 'Biblioteca/Fake News/NoticiasFalsas.html';
+          break;
+        case 'Apresentação':
+          window.location.href = 'Page1/Apresentacao.html';
+          break;
+        case 'Código QR':
+          window.location.href = 'QR Codes/QR1.html';
+          break;
+        case 'Biblioteca':
+          window.location.href = 'Biblioteca/Biblioteca!!.html';
+          break;
+        default:
+          alert('Esta página não existe...')
+          break;
+      }
     };
 
-div4.onclick = function() {
-  switch (div4.innerHTML) {
-    case 'Fake News':
-      window.location.href = 'Biblioteca/Fake News/NoticiasFalsas.html';
-      break;
-    case 'Apresentação':
-      window.location.href = 'Page1/Apresentacao.html';
-      break;
-    case 'Código QR':
-      window.location.href = 'QR Codes/QR1.html';
-      break;
-    case 'Biblioteca':
-      window.location.href = 'Biblioteca/Biblioteca!!.html';
-      break;
-    default:
-    alert('Esta página não existe...')
-      break;
-    }
+    div2.onclick = function() {
+      switch (div2.innerHTML) {
+        case 'Fake News':
+          window.location.href = 'Biblioteca/Fake News/NoticiasFalsas.html';
+          break;
+        case 'Apresentação':
+          window.location.href = 'Page1/Apresentacao.html';
+          break;
+        case 'Código QR':
+          window.location.href = 'QR Codes/QR1.html';
+          break;
+        case 'Biblioteca':
+          window.location.href = 'Biblioteca/Biblioteca!!.html';
+          break;
+        default:
+          alert('Esta página não existe...')
+          break;
+      }
     };
-    
-var secaoDaVersao = 0
 
-var protection = document.getElementById('protection');
-var popUp = document.getElementById('Pop-Up');
+    div3.onclick = function() {
+      switch (div3.innerHTML) {
+        case 'Fake News':
+          window.location.href = 'Biblioteca/Fake News/NoticiasFalsas.html';
+          break;
+        case 'Apresentação':
+          window.location.href = 'Page1/Apresentacao.html';
+          break;
+        case 'Código QR':
+          window.location.href = 'QR Codes/QR1.html';
+          break;
+        case 'Biblioteca':
+          window.location.href = 'Biblioteca/Biblioteca!!.html';
+          break;
+        default:
+          alert('Esta página não existe...')
+          break;
+      }
+    };
 
-  popUp.style.display = "none";
-  protection.style.display = "none";
-  
-  function updateDetails() {
-    if (secaoDaVersao == 0) {
-    popUp.style.display = "block";
-    protection.style.display = "block";
-    secaoDaVersao = 1
-    } else {
-      popUp.style.display = "none";
-     protection.style.display = "none";
-      secaoDaVersao = 0
+    div4.onclick = function() {
+      switch (div4.innerHTML) {
+        case 'Fake News':
+          window.location.href = 'Biblioteca/Fake News/NoticiasFalsas.html';
+          break;
+        case 'Apresentação':
+          window.location.href = 'Page1/Apresentacao.html';
+          break;
+        case 'Código QR':
+          window.location.href = 'QR Codes/QR1.html';
+          break;
+        case 'Biblioteca':
+          window.location.href = 'Biblioteca/Biblioteca!!.html';
+          break;
+        default:
+          alert('Esta página não existe...')
+          break;
+      }
+    };
+
+    var secaoDaVersao = 0
+
+    var protection = document.getElementById('protection');
+    var popUp = document.getElementById('Pop-Up');
+
+    popUp.style.display = "none";
+    protection.style.display = "none";
+
+    function updateDetails() {
+      if (secaoDaVersao == 0) {
+        popUp.style.display = "block";
+        protection.style.display = "block";
+        secaoDaVersao = 1
+      } else {
+        popUp.style.display = "none";
+        protection.style.display = "none";
+        secaoDaVersao = 0
+      }
     }
-  }
-</script>
+  </script>
 </body>
+
 </html>

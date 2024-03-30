@@ -9,6 +9,12 @@
     align-items: center;
     color: white;
   }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
   p {
     animation: intro 2s;
     font-size: 11pt;
@@ -21,14 +27,14 @@
       opacity: 100%;
     }
   }
-  @font-face {
+  /*@font-face {
     font-family: normal1;
     src: url(/Font/normal.otf);
   }
   @font-face {
     font-family: font1;
     src: url(/Font/Inlanders.otf);
-  }
+  }*/
   h1, h2, h3 {
     color: white;
     font-family: font1;

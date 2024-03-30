@@ -14,37 +14,38 @@
 </head>
 
 <body>
-<div class="caixa">
-  <img src="frame.png" onclick="qrlink()">
-  <i style="color: dimgrey;">Scaneie o Código ou Clique para saber mais</i>
-</div>
-<div class="con_grupo" id="button-home" onclick="BackPage()">
-<p>
-PÁGINA ANT.
-</p>
-</div>
-<script>
-  function qrlink() {
-    window.location.href = "https://www.jusbrasil.com.br/artigos/fake-news-e-o-impacto-na-promocao-dos-direitos-humanos/1328244468"
-  }
-</script>
-<script>
-function BackPage() {
-window.history.back();
-}
+  <div class="caixa">
+    <img src="frame.png" id="qr-code">
+    <i style="color: dimgrey;">Scaneie o Código ou Clique para saber mais</i>
+  </div>
+  <div class="con_grupo" id="button-home" onclick="BackPage()">
+    <p>
+      PÁGINA ANT.
+    </p>
+  </div>
+  <script>
+    var qrcode = window.document.getElementById("qr-code");
+    qrcode.onclick = function() {
+      window.location.href = "https://www.jusbrasil.com.br/artigos/fake-news-e-o-impacto-na-promocao-dos-direitos-humanos/1328244468";
+    };
+  </script>
+  <script>
+    function BackPage() {
+      window.history.back();
+    }
 
-window.addEventListener('scroll', function() {
-var button = document.getElementById('button-home');
-var scrollPosition = window.scrollY + window.innerHeight;
-var documentHeight = document.body.scrollHeight;
+    window.addEventListener('scroll', function() {
+      var button = document.getElementById('button-home');
+      var scrollPosition = window.scrollY + window.innerHeight;
+      var documentHeight = document.body.scrollHeight;
 
-if (scrollPosition >= documentHeight) {
-button.style.opacity = '0.5'; // 50% transparente
-} else {
-button.style.opacity = '1'; // Opacidade normal
-}
-});
-</script>
+      if (scrollPosition >= documentHeight) {
+        button.style.opacity = '0.5'; // 50% transparente
+      } else {
+        button.style.opacity = '1'; // Opacidade normal
+      }
+    });
+  </script>
 </body>
 
 </html>

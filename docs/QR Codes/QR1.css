@@ -10,11 +10,19 @@ body {
   align-items: center;
   min-height: 100vh;
   background-image: linear-gradient(to bottom, transparent, #151320), url('/docs/Img/OIG1.png');
-  background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
-  background-position: center; /* Centraliza a imagem */
-  background-repeat: no-repeat; /* Evita repetir a imagem */
-    font-family: Arial, sans-serif;
-    animation: intro 2s;
+  background-size: cover;
+  /* Ajusta a imagem para cobrir todo o elemento */
+  background-position: center;
+  /* Centraliza a imagem */
+  background-repeat: no-repeat;
+  /* Evita repetir a imagem */
+  animation: intro 2s;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
 .caixa {
@@ -29,7 +37,8 @@ body {
   background: #151320;
 }
 
-.caixa::before, .caixa::after {
+.caixa::before,
+.caixa::after {
   content: '';
   position: absolute;
   width: calc(100% + 30px);
@@ -48,7 +57,8 @@ body {
 @keyframes animacaoborda {
   0% {
     background-position: 0;
-    }
+  }
+
   100% {
     background-position: 300%;
   }
@@ -62,32 +72,33 @@ img {
 
 i {
   position: absolute;
-  bottom: 0px;
-  left: 7px;
+  bottom: 10px;
   text-align: center;
 }
 
- .con_grupo {
-    height: 50pt;
-    width: 50pt;
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px #00000043;
-    position: fixed;
-    bottom: 15pt;
-    right: 15pt;
-    color: white;
-    background: #151320;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
+.con_grupo {
+  height: 50pt;
+  width: 50pt;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #00000043;
+  position: fixed;
+  bottom: 15pt;
+  right: 15pt;
+  color: white;
+  background: #151320;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+@keyframes intro {
+  from {
+    opacity: 0%;
   }
-   @keyframes intro {
-    from {
-      opacity: 0%;
-    }
-    to {
-      opacity: 100%;
-    }
+
+  to {
+    opacity: 100%;
   }
+}
