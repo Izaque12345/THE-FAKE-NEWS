@@ -140,7 +140,9 @@ h1 {
   color: whitesmoke;
   position: absolute;
   padding: 25px 25px 25px 25px;
+  overflow-y: auto;
   z-index: 2;
+  height: 100%;
 }
 
 #protection {
@@ -150,4 +152,8 @@ h1 {
   height: 100%;
   width: 100%;
   z-index: 1;
+}
+
+strong {
+  color: red;
 }

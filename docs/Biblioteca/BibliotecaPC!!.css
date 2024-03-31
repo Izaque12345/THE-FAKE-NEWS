@@ -1,4 +1,4 @@
-@media only screen and (min-width: 601px) {
+/*@media only screen and (min-width: 601px) {*/
   body {
     background: linear-gradient(to right, black, #151320, #251F44);
     margin: 0;
@@ -66,4 +66,4 @@ a {
   /*.h21045jl2 {
     display: none; /* Esconder o elemento no PC
   }*/
-}
+/*}*/

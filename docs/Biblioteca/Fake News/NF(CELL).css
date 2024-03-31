@@ -1,5 +1,5 @@
 /* Estilos para celular */
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 600px) {*/
   body {
     margin: 15pt;
     background: black;
@@ -103,4 +103,4 @@ a {
 audio {
   border-radius: 20px;
 }
-}
+/*}*/
