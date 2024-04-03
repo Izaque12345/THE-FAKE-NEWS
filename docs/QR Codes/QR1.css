@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: linear-gradient(to bottom, transparent, #151320), url('/docs/Img/OIG1.png');
+  background-image: linear-gradient(to bottom, #580E0E, #030022);
   background-size: cover;
   /* Ajusta a imagem para cobrir todo o elemento */
   background-position: center;

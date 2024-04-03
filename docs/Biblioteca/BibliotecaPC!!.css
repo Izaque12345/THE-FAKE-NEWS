@@ -20,7 +20,7 @@
     border-radius: 20px;
     overflow-y: auto;
     overflow-x: hidden;
-    background: #151320;
+    background: linear-gradient(95deg, #0D0044, #300044);
     margin: 20px;
   }
 

@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: linear-gradient(to bottom, transparent, #151320), url('Img/OIG1.png');
+  background-image: linear-gradient(to bottom, transparent, #030022), url('Img/OIG1.png');
   background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Evita repetir a imagem */
@@ -69,7 +69,7 @@ section {
   justify-content: center;
   align-items: center;
   border-radius: 3px;
-  background: #151320;
+  background: #030022;
   text-align: center; /* Alinha o texto dentro da .caixa no centro */
   padding: 20px; /* Adiciona um espaçamento interno para o texto */
 }
