@@ -164,16 +164,7 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: black;
-  animation: TRGB 3s linear alternate infinite;
-} @keyframes TRGB {
-  0% {
-    background-position: 0;
-  }
-  100% {
-    background-position: 300%;
-  }
 }
-
 footer {
   font-size: 8pt;
 }

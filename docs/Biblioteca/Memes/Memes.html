@@ -10,14 +10,17 @@
 </head>
 
 <body>
+  <div id=""></div>
   <center>
     <h2>MEMES SOBRE FAKE NEWS</h2>
   </center>
   <h3 style="color: orange;">ESQUETES</h3>
   <section>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY2KvjUkcpyJZHOJo3uhmkNMUAx1HayBR-MioHqfhEACrWx5RYp8-Whuc&s=10" alt="">
+    <center>
+      <img onclick="imgClick()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY2KvjUkcpyJZHOJo3uhmkNMUAx1HayBR-MioHqfhEACrWx5RYp8-Whuc&s=10" alt="">
+    </center>
   </section>
-    <footer>
+    <footer style="text-align: center;">
       <p>
         <i style="color: lightgrey;">&copy;2024 Grupo STEAMS 9B JCFB</i>
       </p>
@@ -27,8 +30,28 @@
 PÁGINA ANT.
 </p>
 </div>
+<div id="Mensage"></div>
+<!--<script>
+  var viewimg = document.getElementById('viewimg');
+  var img = document.getElementsByTagName('img');
+  var visbilidadeViewimg = 0;
+  viewimg.style.display = "none";
+  function imgClick() {
+    if (visbilidadeViewimg == 0) {
+      visibilidadeViewimg = 1;
+      viewimg.style.display = "flex";
+      viewimg.innerHTML = `<img src="${img.src}">`,
+    } else {
+      visibilidadeViewimg = 0
+      viewimg.style.display = "none"
+    }
+  };
+</script>-->
 <script>
-  
+  var  ButtonHome = document.getElementById('button-home');
+  ButtonHome.onclick = function() {
+    window.history.back()
+  };
 </script>
 </body>
 

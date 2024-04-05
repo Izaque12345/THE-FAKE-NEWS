@@ -33,6 +33,7 @@
 
   <div class="caixa">
     <div>
+      <p style="color: red;" id="token"></p>
       <h1>THE FAKE NEWS</h1>
       <a href="Page1/Apresentacao.html">
         <span></span>
@@ -58,9 +59,9 @@
         <footer>
 <p>
 <i style="color: lightgrey;">&copy;2024 Grupo STEAMS 9B JCFB</i>
-</p>
+</p> 
 </footer>
-      <i style="color: red;" onclick="updateDetails()">ESTÁGIO FINAL</i>&nbsp;&nbsp;<i style="color: lightgrey;">parte 8</i>
+      <i style="color: red;" onclick="updateDetails()">ESTÁGIO FINAL</i>&nbsp;&nbsp;<i style="color: lightgrey;"></i>
       <!--<i style="color: red;">OFICIAL</i>-->
     </div>
   </div>
@@ -298,6 +299,34 @@ Código Inicial
       }
     };
   </script>-->
+  <script>
+  const token = document.getElementById('token');
+    // Função que executa o bloco de código a partir de uma determinada data
+async function executarAPartirDe(dataInicio) {
+    // Loop infinito
+    while (true) {
+        // Obtenha a data atual
+        const dataAtual = new Date();
+        
+        // Verifique se a data atual é maior ou igual à data de início
+        if (dataAtual >= dataInicio) {
+            // Se a data atual for maior ou igual à data de início, execute o bloco de código
+            // Aqui você pode colocar o código que deseja executar continuamente
+            console.log('A chave de acesso expirou!');
+            token.innerText = "A chave de acesso expirou!"
+        }
+        
+        // Aguarde um tempo antes de verificar novamente a data atual
+        await new Promise(resolve => setTimeout(resolve, 1000));
+    }
+}
+
+// Defina a data a partir da qual o bloco deve ser executado para sempre (ano, mês, dia)
+const dataInicio = new Date(2024, 3, 9); // 1 de abril de 2024
+
+// Chame a função para iniciar a execução do bloco a partir da data especificada
+executarAPartirDe(dataInicio);
+  </script>
 </body>
 
 </html>
