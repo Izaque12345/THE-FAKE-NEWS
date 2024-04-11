@@ -1,0 +1,237 @@
+/* Estilos para celular */
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 15pt;
+    background: linear-gradient(to bottom, #151320, #a20b00, #640c06);
+    text-align: center;
+    cursor: default;
+    font-size: 14px;
+    align-items: center;
+    color: white;
+    height: 100vh;
+    animation: 2s intro;
+  }
+  iframe {
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px #0000006d;
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    width: 100%;
+    height: auto;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  p {
+    animation: intro 2s;
+    font-size: 11pt;
+  }
+  @keyframes intro {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  /*@font-face {
+    font-family: normal1;
+    src: url(/Font/normal.otf);
+  }
+  @font-face {
+    font-family: font1;
+    src: url(/Font/Inlanders.otf);
+  }*/
+  h1, h2, h3 {
+    color: white;
+    font-family: font1;
+    text-shadow: 2px 2px 2px #00000060;
+    font-size: 15pt;
+    text-transform: uppercase;
+  }
+  p, legend {
+    font-family: normal1;
+  }
+  strong {
+    color: #ffec35;
+    /* Cor do texto */
+  }
+  img {
+    width: 100%;
+    border-radius: 4px;
+  }
+  iframe {
+    box-shadow: 2px 2px 3px #0000006d;
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    width: 100%;
+    height: 200px;
+  }
+  .menssagem {
+    border-radius: 50px;
+    box-shadow: 2px 2px 3px #0000006d;
+    background-color: black;
+    color: white;
+    width: 100%;
+  }
+  .video_ {
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    display: inline;
+  }
+  .con_grupo {
+    height: 50pt;
+    width: 50pt;
+    border-radius: 100px;
+    box-shadow: 3px 3px 5px #00000043;
+    position: fixed;
+    bottom: 15pt;
+    right: 15pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    background: #151320;
+  }
+
+
+  .header {
+    text-align: center;
+    background: linear-gradient(to right, black, #500808);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 24pt;
+    font-family: font1;
+    text-shadow: 2px 2px 2px #00000060;
+  }
+
+a {
+  color: #ffa903;
+}
+a:active {
+  color: blue;
+}
+audio {
+  border-radius: 20px;
+}
+}
+/* Estilos para PC */
+@media only screen and (min-width: 601px) {
+  body {
+    margin: 15pt;
+    font-size: 15pt;
+    text-align: center;
+    background: linear-gradient(to bottom, #151320, #a20b00, #640c06);
+    color: white;
+    height: 100vh;
+    animation: 2s intro;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  p {
+    animation: intro 2s;
+    color: white;
+  }
+  @keyframes intro {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  /*@font-face {
+    font-family: normal1;
+    src: url(Font/normal.otf);
+  }
+  @font-face {
+    font-family: font1;
+    src: url(Font/inlanders.otf);
+  }*/
+  h1, h2, h3 {
+    color: white;
+    font-family: font1;
+    text-shadow: 2px 2px 2px #00000060;
+  }
+  p, legend {
+    font-family: normal1;
+    width: 485pt;
+    color: white;
+  }
+  strong {
+    color: #ffec35; /* Cor do texto */
+  }
+  img {
+    width: 50%;
+    height: auto;
+    border-radius: 10pt;
+  }
+  iframe {
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px #0000006d;
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    width: 60%;
+    height: 270px;
+  }
+  .menssagem {
+    margin-top: 3pt;
+    margin-bottom: 3pt;
+    border-radius: 50px;
+    box-shadow: 2px 2px 3px #0000006d;
+    background-color: black;
+    color: white;
+    padding: 3px;
+    /*justify-content: center;
+    align-items: center;
+    display: flex;*/
+  }
+  .con_grupo {
+    height: 50pt;
+    width: 50pt;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #00000043;
+    position: fixed;
+    bottom: 15pt;
+    right: 15pt;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #151320;
+    padding: 10px;
+  }
+  /*.gradient-text {
+    background: linear-gradient(to right, white, #FFE900);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }*/
+  .header {
+    text-align: center;
+    background: linear-gradient(to right, black, #500808);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 24pt;
+    font-family: font1;
+    text-shadow: 2px 2px 2px #00000060;
+  }
+  p, i {
+    text-align: center;
+    justify-content: center;
+  }
+a {
+  color: #ffa903;
+}
+}

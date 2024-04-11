@@ -2,8 +2,7 @@
 body {
   margin: 15px;
   color: white;
-  background: linear-gradient(to right, black 45%, #0E0058, #44A1B5);
-  background-repeat: none;
+  background: linear-gradient(to bottom, black, #030022, #300404);
     animation: intro 2s;
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');

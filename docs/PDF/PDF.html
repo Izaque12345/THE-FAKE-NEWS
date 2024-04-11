@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="PDF.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>THE FAKE NEWS | PDF</title>
+</head>
+
+<body>
+<h1>Baixar&nbsp; PDF</h1>
+<a download href="PDF/G3_9B.pdf">Fazer o Download</a>
+  <section>
+    <h1>visualização&nbsp;&#128065;</h1>
+    <iframe src="https://drive.google.com/file/d/1L4LVID0lVU3Pl5LeBwGoLbwPZXBH8RUx/view?usp=drivesdk" frameborder="0">/PDF/G3_9B.pdf</iframe>
+  </section>
+<div class="con_grupo" id="button-home" onclick="BackPage()">
+<p>
+PÁGINA ANT.
+</p>
+</div>
+<script>
+  var iframe = window.document.getElementsByTagName("iframe")[0];
+  
+  function verificarErro() {
+  if (iframe.src == "https://drive.google.com/file/d/1L4LVID0lVU3Pl5LeBwGoLbwPZXBH8RUx/view?usp=drivesdk") {
+    iframe.src = "Erro.html";
+  }
+  }
+  window.onload = verificarErro
+</script>
+<center>
+  <footer style="text-align: center;">
+      <p>
+        <i style="color: lightgrey;">&copy;2024 Grupo STEAMS 9B JCFB</i>
+      </p>
+    </footer>
+</center>
+    <script>
+  var  ButtonHome = document.getElementById('button-home');
+  ButtonHome.onclick = function() {
+    window.history.back()
+  };
+</script>
+</body>
+
+</html>
