@@ -2,7 +2,7 @@
 @media only screen and (max-width: 600px) {
   body {
     margin: 15pt;
-    background: linear-gradient(to bottom, #151320, #a20b00, #640c06);
+    background: linear-gradient(to bottom, black, #030022, #300404);
     text-align: center;
     cursor: default;
     font-size: 14px;

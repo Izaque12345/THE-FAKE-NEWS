@@ -2,13 +2,15 @@
 @media only screen and (max-width: 600px) {
   body {
     margin: 15pt;
-    background: linear-gradient(to right, black 45%, #0E0058, #806AF3);
+    background: linear-gradient(to bottom, black, #030022, #300404);
     text-align: left;
     cursor: default;
     font-size: 14px;
     align-items: center;
     color: white;
+    min-height: 100vh;
     animation: intro 2s;
+    background-repeat: no-repeat;
   }
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
   
@@ -104,12 +106,13 @@ audio {
 @media only screen and (min-width: 601px) {
     body {
     margin: 15pt;
-    background: linear-gradient(to right, black 45%, #501111, #CC1313);
+    background: linear-gradient(to bottom, black, #030022, #300404);
     text-align: left;
     cursor: default;
     font-size: 14px;
     align-items: center;
     color: white;
+    min-height: 100vh;
     animation: intro 2s;
   }
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');

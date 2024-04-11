@@ -16,7 +16,7 @@
 <section>
   <!-- Caixa 1 -->
   <a href="Fake News/NoticiasFalsas.html">
-  <div class="box" onclick="Redirect()">
+  <div class="box" id="caixa1" onclick="Redirect()">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAWSOgEhMLUK2nk0wWkB4nwkOoZi_pYEsWiT506IUH1Tb0pO6UAq5zV5zm&s=10" alt="">
       <center>
         <div>
@@ -30,7 +30,7 @@
 
 <!-- Caixa 2 -->
 <a href="Memes/Memes.html">
-  <div class="box">
+  <div class="box" id="caixa2">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShMxhpjglXKb8PCXefk9H9DOKh5a236kSMOw&usqp=CAU" alt="">
       <center>
         <div>
@@ -59,6 +59,8 @@ function toggleCSS() {
   var screenWidth = window.innerWidth;
   var cssLink = document.getElementById('cssLink');
   var tituloT = document.getElementById("tituloT");
+  var caixa1 = document.getElementsByTagName("div")[0];
+  var caixa2 = document.getElementsByTagName("div")[1];
 
   if (screenWidth <= 768) {
     cssLink.href = 'BibliotecaCELL!!.css';

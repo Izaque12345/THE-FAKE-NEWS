@@ -13,22 +13,34 @@
   div {
     margin: auto;
   }
-
-  .box {
+  #caixa1 {
     height: 200px;
     width: 150px;
     border-radius: 20px;
     overflow-y: auto;
     overflow-x: hidden;
-    background: linear-gradient(95deg, #0D0044, #300044);
     margin: 20px;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAWSOgEhMLUK2nk0wWkB4nwkOoZi_pYEsWiT506IUH1Tb0pO6UAq5zV5zm&s=10);
+    color: #580202;
   }
-
+  #caixa2 {
+    height: 200px;
+    width: 150px;
+    border-radius: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 20px;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShMxhpjglXKb8PCXefk9H9DOKh5a236kSMOw&usqp=CAU);
+  }
+img {
+  display: none;
+}
   p, img {
     margin: auto;
   }
 
   #MSG-rolarParaBaixo {
+    display: none;
     position: relative;
     top: 5px;
     padding: 2px;
