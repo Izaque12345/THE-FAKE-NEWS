@@ -3,7 +3,7 @@ body {
   background: #151320;
   margin: 15px;
   color: white;
-  background: linear-gradient(to right, black, #151320, #251F44);
+  background: linear-gradient(to right, black, #7C0000);
     animation: intro 2s;
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');

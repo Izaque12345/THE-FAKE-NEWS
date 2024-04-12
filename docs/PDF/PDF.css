@@ -132,6 +132,11 @@ audio {
     animation: 2s intro;
   }
   
+  p {
+    text-align: center;
+    margin: auto;
+  }
+  
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
   
   body {
@@ -227,11 +232,13 @@ audio {
     font-family: font1;
     text-shadow: 2px 2px 2px #00000060;
   }
-  p, i {
-    text-align: center;
-    justify-content: center;
-  }
 a {
   color: #ffa903;
+}
+a:active {
+  color: blue;
+}
+footer {
+  text-align: center;
 }
 }
